@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    /* border: 2px solid red; */
+    grid-template-columns: repeat(4,200px);
+    /* grid-template-rows: 450px 900px 1750px 450px; */
+    grid-gap:30px;
+    height: 200vh;
+    justify-content: center;
+    margin: 50px;
+}
+
+div > div {
+    background-color: royalblue;
+    color: white;
+}
+
+.header {
+    grid-column: 1/5;
+}
+
+.sidebar {
+    grid-area: 2/4/4/5;
+}
+
+.main {
+    grid-area: 3/1/4/4;
+}
+
+.footer {
+    grid-area: 4/1/5/5;
+}
